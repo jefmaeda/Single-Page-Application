@@ -37,7 +37,9 @@
 
         function handle() {
             const {pathname} = window.location
-            console.log(pathname)
+            const route = routes[pathname] || routes[404]
+
+            console.log(route)
         }
     </script>
 </body>
